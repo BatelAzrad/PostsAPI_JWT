@@ -18,3 +18,18 @@ curl -i --header "Content-Type: application/json" --request POST \
 
 ```
 
+## Saving the token in variable
+```
+token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNTc5MDM4NDE2LCJuYmYiOjE1NzkwMzg0MTYsImV4cCI6MTU3OTAzODcxNn0.s0nqLc69sdYGtvRHbuz4LBIeVyb-d5-vTbLMnuyRMao
+```
+
+## Identify the token owner
+```
+curl -i http://54.93.232.155:9000/whoami -H "Authorization: jwt $token"
+```
+
+## Response of the owner
+```
+"ID:1, User:batel"
+```
+
