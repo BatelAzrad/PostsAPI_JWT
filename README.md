@@ -106,7 +106,7 @@ curl -i --header "Content-Type: application/json" --request POST \
 http://54.93.232.155:9000/create -H "Authorization: jwt $token"
 ```
 
-## Created post respons
+## Created post response
 ```
 "Post inserted to DB"
 ```
