@@ -1,7 +1,7 @@
 A Posts API (CRUD) with permission management using JWT
 
 ## AWS EC2 deployment for testing hands-on
-[](http://54.93.232.155:9000/)
+[URL](http://54.93.232.155:9000/)
 
 
 ## Generating token using JWT
