@@ -33,3 +33,69 @@ curl -i http://54.93.232.155:9000/whoami -H "Authorization: jwt $token"
 "ID:1, User:batel"
 ```
 
+## Get all users
+```
+curl -i http://54.93.232.155:9000/users -H "Authorization: jwt $token"
+```
+
+## All users response
+```
+[
+  [
+    1,
+    "batel",
+    "123456",
+    "admin"
+  ],
+  [
+    2,
+    "kira",
+    "123456",
+    "admin"
+  ],
+  [
+    3,
+    "red",
+    "123456",
+    "user"
+  ],
+]
+```
+
+## Get all posts
+```
+curl -i http://54.93.232.155:9000/posts -H "Authorization: jwt $token"
+```
+
+## All posts response
+```
+[
+  [
+    1,
+    "kira",
+    "3 places to bury my bone",
+    "1) Yard, 2) Under my parents bed, 3) Inside the pot. - Woff-Woff Kira",
+    "",
+    "",
+    2
+  ],
+  [
+    2,
+    "batel",
+    "My developing skills",
+    "Python, Javascript, Java, HTML, CSS, etc.",
+    "Software engineer skills",
+    "#Developer #Software",
+    1
+  ],
+  [
+    3,
+    "kira",
+    "Test Title woof",
+    "Test Content",
+    "Admin content",
+    "#Tag1 #tag2",
+    1
+  ]
+]
+```
