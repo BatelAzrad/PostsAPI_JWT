@@ -99,3 +99,14 @@ curl -i http://54.93.232.155:9000/posts -H "Authorization: jwt $token"
   ]
 ]
 ```
+## Create post
+```
+curl -i --header "Content-Type: application/json" --request POST \
+--data '{"title":"My JWT project","content":"In order to implement this project I used python with flask framework, JWT and MySql.", "admin_content":"admin", "tags":"Python, JWT, API, MySQL, Flask"}' \
+http://54.93.232.155:9000/create -H "Authorization: jwt $token"
+```
+
+## Created post respons
+```
+"Post inserted to DB"
+```
